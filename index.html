@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirae Ventures</title>
+  <link rel="icon" type="image/png" href="mirae-icon-512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1d24 0%, #2d323c 100%);
+      min-height: 100vh;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 40px 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+    }
+
+    .logo-text {
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .logo-text span {
+      color: #e07b3c;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 0;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    h1 span {
+      background: linear-gradient(135deg, #e07b3c, #f4a261);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      font-size: 20px;
+      color: #a1a1aa;
+      line-height: 1.6;
+      max-width: 560px;
+      margin-bottom: 48px;
+    }
+
+    .products {
+      margin-bottom: 48px;
+    }
+
+    .products h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #e07b3c;
+      margin-bottom: 20px;
+    }
+
+    .product-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 20px 28px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(224, 123, 60, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .product-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+    }
+
+    .product-info h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .product-info p {
+      font-size: 14px;
+      color: #a1a1aa;
+    }
+
+    .contact {
+      padding-top: 32px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .contact a {
+      color: #e07b3c;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      color: #52525b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="mirae-icon-512.png" alt="Mirae Ventures" class="logo-icon">
+      <div class="logo-text">Mirae<span>Ventures</span></div>
+    </header>
+
+    <main>
+      <h1>Building apps that <span>make life simpler</span></h1>
+
+      <p class="tagline">
+        Mirae Ventures is a software development company focused on creating thoughtful consumer applications that solve everyday problems.
+      </p>
+
+      <div class="products">
+        <h2>Our Products</h2>
+        <a href="https://getfoilapp.com" class="product-card" target="_blank" rel="noopener">
+          <img src="https://getfoilapp.com/images/foil_icon.png" alt="Foil" class="product-icon">
+          <div class="product-info">
+            <h3>Foil</h3>
+            <p>Track food expiration, reduce waste, save money</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact">
+        <p>Get in touch: <a href="mailto:getfoilapp@gmail.com">getfoilapp@gmail.com</a></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Mirae Ventures LLC. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
